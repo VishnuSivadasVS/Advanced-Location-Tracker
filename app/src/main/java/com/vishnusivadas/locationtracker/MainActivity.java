@@ -155,9 +155,9 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
+    AlertDialog alert = null;
     private void buildAlertMessageNoGps() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        final AlertDialog alert = builder.create();
         builder.setMessage("GPS is needed for this application Turn it on.")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -172,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                         buildAlertMessageNoGps();
                     }
                 });
+        alert = builder.create();
         alert.show();
     }
 
