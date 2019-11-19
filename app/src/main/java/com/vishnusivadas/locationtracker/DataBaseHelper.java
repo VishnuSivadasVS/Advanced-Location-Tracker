@@ -49,8 +49,7 @@ public class DataBaseHelper extends AsyncTask<String, Void, String> {
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, StandardCharsets.UTF_8));
                 String post_data = URLEncoder.encode("latitude", "UTF-8") + "=" + URLEncoder.encode(la, "UTF-8") + "&"
-                        + URLEncoder.encode("longitude", "UTF-8") + "=" + URLEncoder.encode(lo, "UTF-8") + "&"
-                        + URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode("ram", "UTF-8");
+                        + URLEncoder.encode("longitude", "UTF-8") + "=" + URLEncoder.encode(lo, "UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
