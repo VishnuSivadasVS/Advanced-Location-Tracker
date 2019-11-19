@@ -35,7 +35,7 @@ public class DataBaseHelper extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "https://android.indiasgroup.in/employees/livelocation.php";
+        String login_url = "https://android.vishnusivadas.com/livelocation.php";
 
         if (type.equals("loc")) {
             try {
