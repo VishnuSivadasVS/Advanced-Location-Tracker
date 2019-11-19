@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/aliceregular</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Toolbar.Light" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/dark_gray</item>
+        <item name="android:fontFamily">@font/aliceregular</item>
+        <item name="android:textStyle">bold</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/dark_gray</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:fontFamily">@font/aliceregular</item>
+    </style>
+
+</resources>

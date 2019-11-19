@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:text="NETWORK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/dark_gray" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/spacing_middle"
+                    android:paddingBottom="@dimen/spacing_middle">
+
+                    <LinearLayout
+                        android:id="@+id/mobile_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/dark_gray"
+                            app:srcCompat="@drawable/ic_sim_card" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Simcard &amp; Network"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/dark_gray"
+                            app:srcCompat="@drawable/ic_arrow_right" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/red"
+                            app:srcCompat="@drawable/ic_wifi" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Wi-Fi"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:thumbTint="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/blue"
+                            app:srcCompat="@drawable/ic_bluetooth" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Bluetooth"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/bluetooth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:thumbTint="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginLeft="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:text="SOUND"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/dark_gray" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/spacing_middle"
+                    android:paddingBottom="@dimen/spacing_middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/red"
+                            app:srcCompat="@drawable/ic_do_not_disturb_off" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Silent Mode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/silent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:thumbTint="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/red"
+                            app:srcCompat="@drawable/ic_vibration" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Vibrate Mode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/vibrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:thumbTint="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/spacing_xxlarge"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_medium"
+                        android:paddingRight="@dimen/spacing_medium">
+
+                        <ImageButton
+                            android:layout_width="@dimen/spacing_xmlarge"
+                            android:layout_height="@dimen/spacing_xmlarge"
+                            android:background="@android:color/transparent"
+                            android:tint="@color/green"
+                            app:srcCompat="@drawable/ic_volume_up" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_small"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Normal Mode"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/dark_gray" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/soundon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_arrow_right"
+                            app:thumbTint="@color/colorPrimary" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

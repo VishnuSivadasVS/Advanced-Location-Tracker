@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Location Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="location">Location</string>
+    <string name="stop_tracking">Stop tracking</string>
+    <string name="start_tracking">Start tracking</string>
+    <string name="no_internet">No internet !</string>
+    <string name="retry">Retry</string>
+    <string name="no_net_text">You need internet connection to use this application.</string>
+    <string name="location_history">Location history</string>
+</resources>
