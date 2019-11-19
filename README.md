@@ -20,3 +20,9 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])) {
 	$result=mysqli_query($conn,$sql);
 }
 ```
+
+You DataBase Table should be like,
+
+| id | latitude | latitude |
+| -- | -------- | -------- |
+| 1  | 01234567 | 01234567 |
