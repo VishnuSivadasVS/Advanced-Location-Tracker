@@ -21,8 +21,10 @@ if(!empty($_POST['latitude']) && !empty($_POST['longitude'])) {
 }
 ```
 
-You DataBase Table should be like,
+You DataBase Table (livelocation) should be like,
 
 | id | latitude | latitude |
 | -- | -------- | -------- |
 | 1  | 01234567 | 01234567 |
+
+Hope you got it. Everything is explained so that even a biginer could understand it.
