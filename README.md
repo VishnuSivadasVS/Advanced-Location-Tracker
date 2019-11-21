@@ -27,4 +27,4 @@ You DataBase Table (livelocation) should be like,
 | -- | -------- | -------- |
 | 1  | 01234567 | 01234567 |
 
-Hope you got it. Everything is explained so that even a biginer could understand it.
+Hope you got it. Everything is explained so that even a beginners could understand it.
