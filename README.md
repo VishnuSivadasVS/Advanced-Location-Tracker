@@ -1,4 +1,5 @@
 # Advanced Location Tracker
+[![Vishnu Sivadas](https://www.vishnusivadas.com/github/codequality.svg?style=flat)](https://github.com/VishnuSivadasVS)
 
 Best solution for tracking live location in Background.
 
