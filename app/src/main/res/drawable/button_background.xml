@@ -3,16 +3,16 @@
     <item
         android:state_enabled="false"
         android:state_focused="true"
-        android:drawable="@drawable/googlepay_button_background_image_focused" />
+        android:drawable="@drawable/button_background_image_focused" />
     <item
         android:state_enabled="false"
-        android:drawable="@drawable/googlepay_button_background_image" />
+        android:drawable="@drawable/button_background_image" />
     <item
         android:state_pressed="true"
-        android:drawable="@drawable/googlepay_button_background_image_pressed" />
+        android:drawable="@drawable/button_background_image_pressed" />
     <item
         android:state_focused="true"
-        android:drawable="@drawable/googlepay_button_background_image_focused" />
+        android:drawable="@drawable/button_background_image_focused" />
     <item
-        android:drawable="@drawable/googlepay_button_background_image" />
+        android:drawable="@drawable/button_background_image" />
 </selector>

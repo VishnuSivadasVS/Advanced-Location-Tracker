@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/ic_destinations"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/location" />
+        android:layout_margin="10dp"
+        android:contentDescription="@string/location"
+        app:srcCompat="@drawable/ic_destinations" />
 
     <Button
         android:id="@+id/start_tracking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/button_background"
         android:enabled="false"
         android:fontFamily="@font/robotoslabbold"
-        android:background="@drawable/button_background"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/start_tracking"
@@ -31,15 +31,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:enabled="false"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/robotoslabbold"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button_background"
+        android:enabled="false"
+        android:fontFamily="@font/robotoslabbold"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/stop_tracking"
-        android:layout_marginBottom="20dp"
         android:textColor="#000"
         android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/start_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/robotoslabbold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/get_location"
+        android:textColor="#000"
+        android:textSize="20sp" />
 
 </LinearLayout>

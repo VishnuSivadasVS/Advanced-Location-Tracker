@@ -143,18 +143,18 @@ public class BackgroundLocationService extends Service {
 
         Notification.Builder builder;
         builder = new Notification.Builder(getApplicationContext(), "channel_01").setAutoCancel(true);
-        builder.setContentTitle("India's Group")
+        builder.setContentTitle("Location Tracker")
                 .setContentText("Live Location Tracking")
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
+                .setSmallIcon(R.drawable.location_on);
         return builder.build();
     }
 
     private Notification getNotification2() {
 
         Notification build = new NotificationCompat.Builder(getApplicationContext())
-                .setContentTitle("India's Group")
+                .setContentTitle("Location Tracker")
                 .setContentText("Live Location Tracking")
+                .setSmallIcon(R.drawable.location_on)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .build();
